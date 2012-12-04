@@ -1,0 +1,15 @@
+{
+	"name": "qParc Core System",
+	"description": "qParc Core Reservations and Promos System",
+
+	"author": "qParc",
+	"authorEmail": "contact@qparc.net",
+	"authorUrl": "http://qparc.net",
+
+	"dependencies": {
+		"plugins": [
+			"acl",
+			"extensions"
+			]
+		}
+}

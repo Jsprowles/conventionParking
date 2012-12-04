@@ -1,0 +1,15 @@
+{
+	"name": "Amazon AWS Plugin",
+	"description": "This plugin is a (*very*) thin veil over Amazon's [AWS SDK for PHP](http://aws.amazon.com/sdkforphp/) for use in CakePHP controllers and shells.",
+
+	"author": "qParc",
+	"authorEmail": "contact@qparc.net",
+	"authorUrl": "http://qparc.net",
+
+	"dependencies": {
+		"plugins": [
+			"acl",
+			"extensions"
+			]
+		}
+}

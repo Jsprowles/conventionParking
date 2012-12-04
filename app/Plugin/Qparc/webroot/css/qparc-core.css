@@ -1,0 +1,57 @@
+fieldset {
+	margin-bottom: 15px;
+    padding: 20px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+legend {
+	width: 98%;
+	float: left;
+	padding: 12px;
+	background-color: #666;
+	color: white;
+	font-weight: bold;
+	margin: -6px -6px 10px -6px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+
+label {
+	font-size:12px;
+}
+
+fieldset input
+{
+	padding: 8px;
+	font-size: 14px;
+	width: 98%;
+}
+
+fieldset input[type=submit]
+{
+	width: 100%;
+	color:#333;
+	font-size:18px;
+	background:-webkit-gradient(linear, left top, left bottom, from(#CCC), to(#FEFEFE));
+}
+
+fieldset input[type=submit]:hover
+{
+	width: 100%;
+	color:#FFFFFF;
+	font-size:18px;
+	background:#4C7FC1;
+}
+
+#locations
+{
+	margin:15px;
+}
+
+#locations td
+{
+	padding:5px;
+}
