@@ -18,6 +18,7 @@
 			'reset',
 			'960',
 			'theme',
+			'ccp',
 		));
 		echo $this->Layout->js();
 		echo $this->Html->script(array(
@@ -33,21 +34,54 @@
 </head>
 <body>
 	<div id="wrapper">
-		<div id="header" class="container_16">
-			<div class="grid_16">
-				<h1 class="site-title"><?php echo $this->Html->link(Configure::read('Site.title'), '/'); ?></h1>
-				<span class="site-tagline"><?php echo Configure::read('Site.tagline'); ?></span>
+		<div id="header-wrapper">
+			<div id="top-nav">
+				<!--this should be controlled by the cms as a navigation-->
+				<ul>
+					<li>PHILLADELPHIA CONVENTION CENTER</li>
+					<li>|</li>
+					<li>AIRPORT</li>
+					<li>|</li>
+					<li>CAR RENTALS</li>
+					<li>|</li>
+					<li>VISIT PHILLY.com</li>
+				</ul>
 			</div>
-			<div class="clear"></div>
-		</div>
-
-		<div id="nav">
-			<div class="container_16">
-				<?php echo $this->Layout->menu('main', array('dropdown' => true)); ?>
-			</div>
-		</div>
+			<div id="header" class="container_16">
+				<div id="logo" class="grid_16 float-left">
+					<h1 class="site-title"><?php echo $this->Html->link(Configure::read('Site.title'), '/'); ?></h1>
+					<p class="site-tagline"><?php echo Configure::read('Site.tagline'); ?></p>
+					<?php echo $this->Html->image('/img/site/logo.png'); ?>
+					<!-- a logo image should be add to the setting panel in the backend-->
+				</div>
+				<!--<div class="clear"></div>-->
+				<div class="float-right">
+					<div id="social">
+						<?php echo $this->Html->image('/img/site/ad.png'); ?><!--ad image here-->
+						<ul>
+							<li><a>facebook</a></li>
+							<li><a>twitter</a></li>
+							<li><a>linkedin</a></li>
+							<li><a>youtube</a></li>
+						</ul>
+					</div>
+					<div id="nav" class="float-right">
+						<div class="container_16">
+							<?php echo $this->Layout->menu('main', array('dropdown' => true)); ?>
+						</div>
+					</div><!-- close nav -->
+				</div>
+				<div class="clear">&nbsp;</div>
+			</div><!-- close header -->
+		</div><!-- close header-wrapper-->
+		<div class="clear">&nbsp;</div>
 
 		<div id="main" class="container_16">
+			
+			<div id="sidebar" class="grid_5">
+			<?php echo $this->Layout->blocks('right'); ?>
+			</div>
+			
 			<div id="content" class="grid_11">
 			<?php
 				echo $this->Layout->sessionFlash();
@@ -55,9 +89,7 @@
 			?>
 			</div>
 
-			<div id="sidebar" class="grid_5">
-			<?php echo $this->Layout->blocks('right'); ?>
-			</div>
+			
 
 			<div class="clear"></div>
 		</div>
