@@ -14,9 +14,10 @@ body {
 
 #top-nav {
     height: 35px;
+    width: 100%;
     background: #000;
     color: #d6d6d6;
-    font-size: 10px;
+    font-size: 12px;
 }
 #top-nav li{
     display: inline;
@@ -46,6 +47,8 @@ body {
 }
 #social img {
     background-color: #FF0000;
+    float: left;
+    margin-right: 15px;
 }
 
 #nav {
@@ -53,13 +56,27 @@ body {
     height: 40px;
     border: none;
     margin: 0 -10px 0 0;
-    background-color:orange;
+    background: url(../img/site/btn-grd.png);
     border: 15px solid #ffffff;
     border-radius: 10px;
 }
+#nav ul {
+    border-radius: 10px;
+}
+#nav ul li {
+    background: none;
+    border: 1px solid #4d4d4d;
+    height: 38px;
+}
+
+#nav ul li a {
+    background: none;
+    color: #333;
+    border: none;
+}
 
 #main {
-    margin-top: -50px;
+    margin-top: -60px;
     width: 950px;
     background-color:#ffffff;
     border: 15px solid #ffffff;

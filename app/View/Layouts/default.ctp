@@ -36,6 +36,7 @@
 	<div id="wrapper">
 		<div id="header-wrapper">
 			<div id="top-nav">
+				<?php echo $this->Layout->menu('topnav', array('dropdown' => false)); ?>
 				<!--this should be controlled by the cms as a navigation-->
 				<ul>
 					<li>PHILLADELPHIA CONVENTION CENTER</li>
