@@ -60,10 +60,10 @@
 					<div id="social">
 						<?php echo $this->Html->image('/img/site/ad.png'); ?><!--ad image here-->
 						<ul>
-							<li><a>facebook</a></li>
-							<li><a>twitter</a></li>
-							<li><a>linkedin</a></li>
-							<li><a>youtube</a></li>
+							<li><a href="http://www.facebook.com"><?php echo $this->Html->image('/img/site/facebook.png'); ?></a></li>
+							<li><a href="http://www."><?php echo $this->Html->image('/img/site/twitter.png'); ?></a></li>
+							<li><a href="http://www."><?php echo $this->Html->image('/img/site/youtube.png'); ?></a></li>
+							<li><a href="http://www."><?php echo $this->Html->image('/img/site/linkedin.png'); ?></a></li>
 						</ul>
 					</div>
 					<div id="nav" class="float-right">
@@ -98,7 +98,7 @@
 		<div id="footer">
 			<div class="container_16">
 				<div class="grid_8 left">
-					Powered by <a href="http://www.croogo.org">Croogo</a>.
+					<p><a>Convention Center Parking Facility</a> &nbsp; Copyright &copy; <?php echo date('Y'); ?>.</p>
 				</div>
 				<div class="grid_8 right">
 					<a href="http://www.cakephp.org"><?php echo $this->Html->image('/img/cake.power.gif'); ?></a>

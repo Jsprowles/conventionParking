@@ -1,15 +1,16 @@
 html {
-    background-color: #000033;
+    background: url(../img/site/background.jpg) repeat-x #12252e;
     clear:both;
 }
 
 body {
-    width: 100%;
-    margin: 0 auto;
+    width: 100%;   
 }
 
 #header-wrapper {
+    max-width: 1080px;
     height: 235px;
+    margin: 0 auto;
 }
 
 #top-nav {
@@ -46,9 +47,9 @@ body {
     display: inline;
 }
 #social img {
-    background-color: #FF0000;
+    
     float: left;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 #nav {
@@ -58,7 +59,9 @@ body {
     margin: 0 -10px 0 0;
     background: url(../img/site/btn-grd.png);
     border: 15px solid #ffffff;
-    border-radius: 10px;
+    /*border-radius: 10px;*/
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 #nav ul {
     border-radius: 10px;
@@ -76,27 +79,43 @@ body {
 }
 
 #main {
-    margin-top: -60px;
+    margin-top: -50px;
     width: 950px;
     background-color:#ffffff;
-    border: 15px solid #ffffff;
-    border-radius: 10px;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 #sidebar {
-    width: 190px;
+    width: 195px;
+    height: 100%;
     margin: 0 15px 0 0;
     background-color: #ccc;
-    height: 100%;
     border-radius: 5px;
 }
 
 #content {
-    width: 745px;
+    width: 720px;
     margin: 0;
     background-color: #ccc;
     border-radius: 5px;
+    padding: 10px;
 }
+
+#footer {
+    background-color: white;
+    width:980px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 0;
+    border:10px solid transparent;
+    -moz-border-image: url(../img/site/footer.png) 0 14 0 14 stretch; /* Old Firefox */
+    -webkit-border-image: url(../img/site/footer.png) 0 14 0 14 stretch; /* Safari */
+    -o-border-image: url(../img/site/footer.png) 0 14 0 14 stretch; /* Opera */
+    border-image: url(../img/site/footer.png) 0 14 0 14 stretch;
+    }
+
 
 .float-left {
     float: left;
