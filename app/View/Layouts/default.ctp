@@ -39,13 +39,13 @@
 				<?php echo $this->Layout->menu('topnav', array('dropdown' => false)); ?>
 				<!--this should be controlled by the cms as a navigation-->
 				<ul>
-					<li>PHILLADELPHIA CONVENTION CENTER</li>
+					<li><a href="http://www.paconvention.com/">PHILADELPHIA CONVENTION CENTER</a></li>
 					<li>|</li>
-					<li>AIRPORT</li>
+					<li><a href="http://www.phl.org/Pages/HomePage.aspx">AIRPORT</a></li>
 					<li>|</li>
-					<li>CAR RENTALS</li>
+					<li><a href="http://www.phl.org/passengerinfo/transportationservices/Pages/rental_cars.aspx">CAR RENTALS</a></li>
 					<li>|</li>
-					<li>VISIT PHILLY.com</li>
+					<li><a href="http://www.visitphilly.com/">VISIT PHILLY.com</a></li>
 				</ul>
 			</div>
 			<div id="header" class="container_16">
@@ -59,12 +59,15 @@
 				<div class="float-right">
 					<div id="social">
 						<?php echo $this->Html->image('/img/site/ad.png'); ?><!--ad image here-->
-						<ul>
-							<li><a href="http://www.facebook.com"><?php echo $this->Html->image('/img/site/facebook.png'); ?></a></li>
-							<li><a href="http://www."><?php echo $this->Html->image('/img/site/twitter.png'); ?></a></li>
-							<li><a href="http://www."><?php echo $this->Html->image('/img/site/youtube.png'); ?></a></li>
-							<li><a href="http://www."><?php echo $this->Html->image('/img/site/linkedin.png'); ?></a></li>
-						</ul>
+						<div id="contact">
+							<p><a href="pages/contact-us">CONTACT US</a></p>
+							<ul>
+								<li><a href="http://www.facebook.com"><?php echo $this->Html->image('/img/site/facebook.png'); ?></a></li>
+								<li><a href="http://www."><?php echo $this->Html->image('/img/site/twitter.png'); ?></a></li>
+								<li><a href="http://www."><?php echo $this->Html->image('/img/site/youtube.png'); ?></a></li>
+								<li class="last"><a href="http://www."><?php echo $this->Html->image('/img/site/linkedin.png'); ?></a></li>
+							</ul>
+						</div>
 					</div>
 					<div id="nav" class="float-right">
 						<div class="container_16">
@@ -97,6 +100,16 @@
 
 		<div id="footer">
 			<div class="container_16">
+				<div id="footer-lease">
+					<div>
+						<h3>Retail Leasing Opportunities</h3>
+						<p class="title">Get in on the Ground Floor!</p>
+						<p>Our attractive new facility offers a perfect location for your retail business.  16,250 sq.ft. of street level retail with green roof technology and high-visibility from the Convention Center!</p>
+						<button type="button">VIEW LEASING INFORMATION</button>
+					</div>
+					<div>
+					</div>
+				</div>
 				<div class="grid_8 left">
 					<p><a>Convention Center Parking Facility</a> &nbsp; Copyright &copy; <?php echo date('Y'); ?>.</p>
 				</div>

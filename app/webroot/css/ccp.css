@@ -6,8 +6,25 @@ html {
 body {
     width: 100%;
     background: url(../img/site/background.jpg) repeat-x;
+    font-family: Verdana, Arial, Helvetica;
+    font-size: 12px;
+    line-height: 14px;
+    color: #666;
 }
-
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color:#2c498a;
+    font-style: normal;
+    font-weight: normal;
+    padding-top: 5px;
+    
+}
+p {
+   margin: 12px 0 12px 0;
+   font-size: 12px;
+   line-height: 14px
+}
 #header-wrapper {
     max-width: 1080px;
     height: 235px;
@@ -15,18 +32,26 @@ body {
 }
 
 #top-nav {
+    margin: 6px 0 0 10px;
     height: 35px;
     width: 100%;
-    background: #000;
     color: #d6d6d6;
     font-size: 12px;
 }
-#top-nav li{
+#top-nav li {
     display: inline;
 }
-
+#top-nav li a {
+    color: #d6d6d6;
+    text-decoration: none;
+}
+#top-nav li a:hover
+{
+    color:#fff
+}
 #header {
  width: 980px;
+ margin-top:10px;
 }
 #logo{
     width: 320px;
@@ -37,66 +62,100 @@ body {
     padding:0;
 }
 #logo img {
-    margin-top: -46px;
+    margin-top: -30px;
 }
-
+#contact {
+    float: right;
+}
+#contact p a{
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 20px;
+}
+#contact p a:hover {
+    text-shadow: 0px 0px 10px #faf7c3;
+}
 #social {
-    width: 610px;
+    width: 630px;
     height: 95px;
 }
 #social li {
     display: inline;
 }
 #social img {
-    
     float: left;
-    margin-right: 10px;
+    margin-right: 15px;
+}
+#social .last img {
+    margin-right: 0;
 }
 
 #nav {
-    width: 580px;
+    width: 600px;
     height: 40px;
-    border: none;
     margin: 0 0 0 0;
-    background: url(../img/site/btn-grd.png);
+    background: #fff;
     border: 15px solid #ffffff;
-    /*border-radius: 10px;*/
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    -moz-border-top-left-radius: 10px;
+    -moz-border-top-right-radius: 10px;
 }
 #nav ul {
+    width:598px;
+    height: 38px;
+    margin: 0 0 0 0;
+    background: url(../img/site/btn-grd.png);
+    border: 1px solid #4d4d4d;
     border-radius: 10px;
+    -moz-border-radius:10px;
 }
 #nav ul li {
     background: none;
-    border: 1px solid #4d4d4d;
+    border-left: 1px solid #4d4d4d;
+    border-right: 1px solid #4d4d4d;
     height: 38px;
 }
-
+#nav ul li.first {
+    margin-left: 25px;
+    border-left: none
+}
 #nav ul li a {
     background: none;
     color: #333;
     border: none;
+    font-size: 16px;
+    
 }
-
+#nav ul li:hover, #nav ul li a:hover, #nav ul li a:active {
+    background: url(../img/site/btn-grd-hover.png);
+    color:#fff;
+    
+    font-size: 16px;
+}
 #main {
-    margin-top: -50px;
+    margin-top: -40px;
     width: 950px;
     background-color:#ffffff;
     padding: 15px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    moz-border-top-right-radius: 10px;
 }
 
 #sidebar {
     width: 165px;
     margin: 0 15px 0 0;
     border-width:15px;
-    -moz-border-image: url(../img/site/sidebar-border.png) 15 round;
+    border-radius: 10px;
+    border-style: solid;
+    -moz-border-image: url(../img/site/sidebar-border.png) 15 fill round;
     -webkit-border-image: url(../img/site/sidebar-border.png) 15 round;
     -o-border-image: url(../img/site/sidebar-border.png) 15 round;
     border-image: url(../img/site/sidebar-border.png) 15 fill round;
-    border-radius: 10px;
+   
 }
 
 #content {
@@ -105,9 +164,29 @@ body {
     padding: 10px;
     background-color: #e5dbd1;
     border-radius: 10px;
+    -moz-border-radius: 10px;
     -webkit-box-shadow: inset 0px 0px 15px 1px #333333;
     -moz-box-shadow: inset 0px 0px 15px 1px #333333;
     box-shadow: inset 0px 0px 15px 1px #333333;
+}
+
+#content a {
+    
+}
+
+#content a:hover, #content a:active, #content a:focus {
+    text-decoration: underline;
+    color: #999;
+}
+
+#content a:visited {
+    color: #6e6c64;
+    text-decoration: underline;
+}
+
+#content a:link {
+    color: blue;
+    text-decoration: underline;
 }
 
 #footer {
@@ -117,6 +196,7 @@ body {
     margin-bottom: 40px;
     padding: 0;
     border-bottom-width: 40px;
+    border-style: solid;
     -moz-border-image: url(../img/site/footer.png) 0 0 30 0 stretch; /* Old Firefox */
     -webkit-border-image: url(../img/site/footer.png) 0 0 30 0 stretch; /* Safari */
     -o-border-image: url(../img/site/footer.png) 0 0 10 0 stretch; /* Opera */

@@ -50,20 +50,20 @@ form .error-message { color: #ee4b33; }
 #nav { border-bottom: 1px solid #ccc; margin-bottom: 40px; margin-top: 50px; height: 37px; }
 #nav ul li,
 #nav ul li a { float: left; display: block; background: #fff; }
-#nav ul li:first-child a { border-left: 1px solid #ccc; }
+/*#nav ul li:first-child a { border-left: 1px solid #ccc; }*/
 #nav ul li a { color: #666; padding: 10px; border-top: 1px solid #ccc; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; text-decoration: none; }
-#nav ul li a:hover { background: #f7f7f7; }
-#nav ul li a.selected { border-bottom: 1px solid #fff; }
-#nav ul li a.selected:hover { background: #f7f7f7; border-bottom: 1px solid #ccc; }
+/*#nav ul li a:hover { background: #f7f7f7; }*/
+/*#nav ul li a.selected { border-bottom: 1px solid #fff; }*/
+/*#nav ul li a.selected:hover { background: #f7f7f7; border-bottom: 1px solid #ccc; }*/
 
-.sf-menu, .sf-menu * { margin:0; padding:0; list-style:none; }
+/*.sf-menu, .sf-menu * { margin:0; padding:0; list-style:none; }
 .sf-menu { line-height:1.0; }
 .sf-menu ul { position:absolute; top:-999em; width:10em; }
 .sf-menu ul li { width:100%; }
 .sf-menu li:hover { visibility:inherit; }
 .sf-menu li { float:left; position:relative; }
-.sf-menu a { display:block; position:relative; }
-.sf-menu li:hover ul,
+.sf-menu a { display:block; position:relative; }*/
+/*.sf-menu li:hover ul,
 .sf-menu li.sfHover ul { left:0; top:2.5em; z-index:99; }
 ul.sf-menu li:hover li ul,
 ul.sf-menu li.sfHover li ul { top:-999em; }
@@ -72,13 +72,13 @@ ul.sf-menu li li.sfHover ul { left:10em; top:0; }
 ul.sf-menu li li:hover li ul,
 ul.sf-menu li li.sfHover li ul { top:-999em; }
 ul.sf-menu li li li:hover ul,
-ul.sf-menu li li li.sfHover ul { left:10em; top:0; }
+ul.sf-menu li li li.sfHover ul { left:10em; top:0; }*/
 
-#nav ul li:first-child ul { margin: -3px 0px 0px 0px; }
+/*#nav ul li:first-child ul { margin: -3px 0px 0px 0px; }
 #nav ul li ul { margin: -3px 0px 0px -1px; }
 #nav li li:first-child a { border-top: 1px solid #ccc; }
 #nav li li a { background: #f7f7f7; border-top: 0px solid #ccc; border-bottom: 1px solid #ccc; border-left: 1px solid #ccc; }
-#nav li li a:hover { color: #ff4b33; }
+#nav li li a:hover { color: #ff4b33; }*/
 
 #nav li li li:first-child { margin: 2px 0px 0px -1px; border-left: 0px solid #ccc; }
 #nav li li li { margin: 0px 0px 0px -1px; }

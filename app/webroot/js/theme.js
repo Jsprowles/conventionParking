@@ -13,4 +13,5 @@ $(document).ready(function(){
 		autoArrows:  false,                             // disable generation of arrow mark-up
 		dropShadows: false                              // disable drop shadows
 	});
+	$("#nav li").first().addClass('first');
 });
