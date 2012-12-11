@@ -26,7 +26,9 @@
 			'jquery/jquery.hoverIntent.minified',
 			'jquery/superfish',
 			'jquery/supersubs',
+			'jquery-cycle-lite',
 			'theme',
+			
 		));
 		echo $this->Blocks->get('css');
 		echo $this->Blocks->get('script');
@@ -63,9 +65,9 @@
 							<p><a href="pages/contact-us">CONTACT US</a></p>
 							<ul>
 								<li><a href="http://www.facebook.com"><?php echo $this->Html->image('/img/site/facebook.png'); ?></a></li>
-								<li><a href="http://www."><?php echo $this->Html->image('/img/site/twitter.png'); ?></a></li>
-								<li><a href="http://www."><?php echo $this->Html->image('/img/site/youtube.png'); ?></a></li>
-								<li class="last"><a href="http://www."><?php echo $this->Html->image('/img/site/linkedin.png'); ?></a></li>
+								<li><a href="http://www.twitter.com"><?php echo $this->Html->image('/img/site/twitter.png'); ?></a></li>
+								<li><a href="http://www.youtube.com"><?php echo $this->Html->image('/img/site/youtube.png'); ?></a></li>
+								<li class="last"><a href="http://www.linkedin.com"><?php echo $this->Html->image('/img/site/linkedin.png'); ?></a></li>
 							</ul>
 						</div>
 					</div>
@@ -101,21 +103,22 @@
 		<div id="footer">
 			<div class="container_16">
 				<div id="footer-lease">
-					<div>
+					<div class="first">
 						<h3>Retail Leasing Opportunities</h3>
 						<p class="title">Get in on the Ground Floor!</p>
 						<p>Our attractive new facility offers a perfect location for your retail business.  16,250 sq.ft. of street level retail with green roof technology and high-visibility from the Convention Center!</p>
 						<button type="button">VIEW LEASING INFORMATION</button>
 					</div>
-					<div>
+					<div class="last">
+						<?php echo $this->Html->image('/img/site/footer-lease.png'); ?>
 					</div>
+					<div class="clear" style="height:0px;"></div>
 				</div>
-				<div class="grid_8 left">
-					<p><a>Convention Center Parking Facility</a> &nbsp; Copyright &copy; <?php echo date('Y'); ?>.</p>
-				</div>
-				<div class="grid_8 right">
-					<a href="http://www.cakephp.org"><?php echo $this->Html->image('/img/cake.power.gif'); ?></a>
-				</div>
+				
+				
+				<p class="footer"><a>Convention Center Parking Facility</a> &nbsp; Copyright &copy; <?php echo date('Y'); ?>.</p>
+				
+				
 				<div class="clear"></div>
 			</div>
 		</div>

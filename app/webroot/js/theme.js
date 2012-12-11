@@ -14,4 +14,12 @@ $(document).ready(function(){
 		dropShadows: false                              // disable drop shadows
 	});
 	$("#nav li").first().addClass('first');
+	$('#slideshow').cycle({ 
+		fx:    'fade', 
+		speed:  2500 
+	});
+	$('#homeSlider').cycle({ 
+		fx:    'fade', 
+		speed:  2500 
+	});
 });

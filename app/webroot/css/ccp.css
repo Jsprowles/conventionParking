@@ -162,16 +162,16 @@ p {
     width: 720px;
     margin: 0;
     padding: 10px;
-    background-color: #e5dbd1;
+    
     border-radius: 10px;
     -moz-border-radius: 10px;
-    -webkit-box-shadow: inset 0px 0px 15px 1px #333333;
-    -moz-box-shadow: inset 0px 0px 15px 1px #333333;
-    box-shadow: inset 0px 0px 15px 1px #333333;
+    -webkit-box-shadow: inset 0px 0px 2px 1px #333333;
+    -moz-box-shadow: inset 0px 0px 2px 1px #333333;
+    box-shadow: inset 0px 0px 2px 1px #333333;
 }
 
-#content a {
-    
+#content .node {
+    padding: 10px 10px 0px 10px;
 }
 
 #content a:hover, #content a:active, #content a:focus {
@@ -205,7 +205,90 @@ p {
 
 #footer .container_16 {
     background-color: #e5dbd1;
-    width: inherit;
+    width: 950px;
+    padding: 15px 15px 0px 15px;
+}
+
+#footer-lease div {
+    background: #ffffff;
+    border: 1px #333333 solid;
+    height: 136px;
+}
+#footer-lease div.first {
+    float:left;
+    width: 567px;
+    border-right: none;
+    border-top-left-radius: 15px;
+    
+    
+}
+#footer-lease div.last {
+    float: right;
+    width: 381px;
+    border-top-right-radius: 15px;
+    border-left: none;
+    
+}
+#footer-lease p {
+    margin: 12px 0 0 10px;
+}
+#footer-lease p.title {
+    font-weight: bold;
+    font-size: 16px;
+    color: blue;
+    margin-bottom: 5px;
+}
+#footer-lease button {
+    float: right;
+    margin: 0 10px 0 0;
+    background-color: rbg(240, 148, 11);
+    background-image: url(../img/site/btn-grd.png);
+}
+#footer h3 {
+    background: blue;
+    color: #fff;
+    font-weight: normal;
+    padding: 10px 10px;
+    border-top-left-radius: 15px;
+}
+.footer {
+    text-align:center;
+    margin-bottom:0;
+    padding-bottom:16px;
+}
+
+#upperPanel {
+    
+}
+
+#homeSlider {
+    width: 500px;
+    height: 350px;
+    float: left;
+}
+
+#sliderCompanion {
+    width: 200px;
+    height: 350px;
+    float:left;
+}
+
+#lowerPanel {
+    margin-top:20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius :15px;
+    border-color:#ccc;
+}
+#lowerPanel h4 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#slideshow {
+    width:631px;
+    height:421px;
+    margin: 20px 0;
 }
 
 
