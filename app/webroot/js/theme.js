@@ -20,6 +20,6 @@ $(document).ready(function(){
 	});
 	$('#homeSlider').cycle({ 
 		fx:    'fade', 
-		speed:  2500 
+		speed:  2500
 	});
 });
