@@ -89,10 +89,12 @@
 			</div>
 			
 			<div id="content" class="grid_11">
-			<?php
-				echo $this->Layout->sessionFlash();
-				echo $content_for_layout;
-			?>
+				<div id="scroller">
+					<?php
+						echo $this->Layout->sessionFlash();
+						echo $content_for_layout;
+					?>
+				</div>
 			</div>
 
 			

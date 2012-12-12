@@ -119,7 +119,10 @@ p {
 }
 #nav ul li.first {
     margin-left: 25px;
-    border-left: none
+    border-left: none;
+}
+#nav ul li.last {
+    border-right: none;
 }
 #nav ul li a {
     background: none;
@@ -147,6 +150,7 @@ p {
 
 #sidebar {
     width: 165px;
+    height: 644px;
     margin: 0 15px 0 0;
     border-width:15px;
     border-radius: 10px;
@@ -157,17 +161,25 @@ p {
     border-image: url(../img/site/sidebar-border.png) 15 fill round;
    
 }
+#sidebar .block  {
+    margin: 0 0 0 -13px;
+}
 
 #content {
     width: 720px;
     margin: 0;
     padding: 10px;
-    
+    height: 654px;
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-box-shadow: inset 0px 0px 2px 1px #333333;
     -moz-box-shadow: inset 0px 0px 2px 1px #333333;
     box-shadow: inset 0px 0px 2px 1px #333333;
+    
+}
+#scroller {
+    height: 654px;
+    overflow:scroll;
 }
 
 #content .node {
@@ -240,9 +252,16 @@ p {
 }
 #footer-lease button {
     float: right;
-    margin: 0 10px 0 0;
+    width: 204px;
+    height: 22px;
+    position: absolute;
+    top: 1043px;
+    left:425px;
+    margin: -2px 10px 0 0;
+    padding-right: 20px;
+    border-width: 0px;
     background-color: rbg(240, 148, 11);
-    background-image: url(../img/site/btn-grd.png);
+    background-image: url(../img/site/lease-btn.png);
 }
 #footer h3 {
     background: blue;
@@ -258,26 +277,56 @@ p {
 }
 
 #upperPanel {
-    
+    width: 685px;
+     border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-box-shadow: 0px 4px 5px 1px #333333;
+    -moz-box-shadow: 0px 4px 5px 1px #333333;
+    box-shadow: 0px 4px 5px 1px #333333;
+    background-color: #333;
 }
 
 #homeSlider {
-    width: 500px;
-    height: 350px;
+    width: 490px;
+    height: 343px;
     float: left;
 }
 
 #sliderCompanion {
-    width: 200px;
-    height: 350px;
+    width: 195px;
+    height: 343px;
     float:left;
+    background-color: #e6dbd0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: #4d4d4d;
+}
+#sliderCompanion h2 {
+    color: #4d4d4d;
+    margin: 13px 0 20px 7px;
+}
+#sliderCompanion ul li {
+    margin: 0 0 13px 5px;
+    font-size: 13px;
+    list-style: none; 
+}
+#sliderCompanion button {
+    height: 22px;
+    width: 104px;
+    background-image: url(../img/site/upper-btn.png);
+    border: none;
+    float:right;
+    margin-right: 10px;
+    padding: 0 20px 0 2px
 }
 
 #lowerPanel {
+    width: 665px;
     margin-top:20px;
     padding: 10px;
     background-color: #fff;
     border-radius :15px;
+    border: 2px #ccc solid;
     border-color:#ccc;
 }
 #lowerPanel h4 {

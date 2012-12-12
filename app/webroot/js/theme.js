@@ -14,6 +14,8 @@ $(document).ready(function(){
 		dropShadows: false                              // disable drop shadows
 	});
 	$("#nav li").first().addClass('first');
+	$("#nav li").last().addClass('last');
+	
 	$('#slideshow').cycle({ 
 		fx:    'fade', 
 		speed:  2500 
